@@ -24,3 +24,9 @@ jobs:
         with:
           targetPlatform: StandaloneWindows
           projectPath: TEAM_1_Project
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Build
+          path: build
+
