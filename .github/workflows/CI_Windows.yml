@@ -16,10 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: move to project directory
-        run: |
-          cd TEAM_1_Project
-
       - uses: game-ci/unity-builder@v2
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -27,3 +23,4 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: StandaloneWindows
+          projectPath: 'TEAM_1_Project'
