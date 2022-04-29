@@ -23,4 +23,4 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         with:
           targetPlatform: StandaloneWindows
-          projectPath: 'TEAM_1_Project'
+          projectPath: TEAM_1_Project
