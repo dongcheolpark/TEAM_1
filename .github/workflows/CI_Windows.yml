@@ -18,7 +18,7 @@ jobs:
 
       - name: move to project directory
         run: |
-        cd TEAM_1_Project
+          cd TEAM_1_Project
 
       - name: CI
       - uses: game-ci/unity-builder@v2
